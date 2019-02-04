@@ -1,0 +1,15 @@
+Progetto di Aglieco Angelo, Università degli studi di Catania, Corso di laurea in Ingegneria Informatica.
+Progetto di Sistemi Operativi-Lato Client
+----------main.c------------------
+int main(...);/*Leggo da tastiera indirizzo ip e porta sulla quale il server è in ascolto, se il server è occupato nella risoluzione di altre richieste rimango in attesa, altrimenti viene richiesto username e password impostati dal server in precedenza.
+A questo punto viene letto da tastiera un intero tra 9-0-1-2 che corrispondono a:
+9-Uscire
+0-Ricevi/Stampa lista FILE server
+1-Ricevi FILE
+2-Invia FILE
+Dopo la lettura dell' intero, quest'ultimo vien inviato al server, richiedendo così il servizio*/
+--------Considerazioni finali----------
+Lo sviluppo del progetto ha portato ad un arricchimento delle mie capacità, infatti è il primo software da me progettato che possa essere definito un programma completo con utilità concreta. Infatti solitamente scrivevo programmi dove veniva simulata una qualche situazione, e questi programmi servivano solo allo scopo di esercitazione. Questa volta è stato diverso, mettere in pratica gran parte dei servizi che il SO ha da offrire. Le maggiori difficolta riscontrate sono state:
+-La scansione delle directory, risolto dedicando una pila per le directory ed una per i file.
+-Capire in che modo inviare ed in che dimensione scrivere e leggere dal socket i segmenti di file. Ho risolto leggendo campi di 1024 byte finchè n di byte rimanenti da leggere sono < di 1024, a quel  punto leggo il num esatto di byte rimanenti.
+Eventuali implementazioni future saranno una versione (lato client) per android, ed una GUI.
